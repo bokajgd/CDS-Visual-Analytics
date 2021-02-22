@@ -14,7 +14,6 @@ The script generates a *.csv* file on the bassis of a specified target image con
 <br>
 - **filename:** The name of the given comparison images
 - **distance:** The chi-square distances between the histograms of the target image and the given comparison image. Small values reveal that two images are alike.
-<br/>
 
 # Download folder locally
 To locally download a compressed zip version of this repository, one can zip the entire repository from GitHub by navigating back to the home page of the repository and clicking the *Code* button and then *Download ZIP*. <br/>
@@ -26,7 +25,7 @@ pip install -r requirements.txt
 ```
 <br>
 It is highly recommended to create a virtual environment for the folder before installing the requirements and running the script.
-<br>
+
 # License
 Shield: [![CC BY-SA 4.0][cc-by-sa-shield]][cc-by-sa]
 
