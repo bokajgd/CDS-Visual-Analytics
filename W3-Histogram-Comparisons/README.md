@@ -7,12 +7,12 @@ This repository contains the W3 assigmnent for the course *Visual Analytics*
 
 # Code
 The code to execute the tasks can be found in the file *W3-Histogram-Comparison.py*<br/>
-<br/>
+
 # Data
 The raw data files are located in *data* > *jpg* <br/>
 The script generates a *.csv* file on the bassis of a specified target image containing two columns:
 <br>
-- **filename:** The name of the given comparison images
+- **filename:** The name of the given comparison images.
 - **distance:** The chi-square distances between the histograms of the target image and the given comparison image. Small values reveal that two images are alike.
 
 # Download folder locally
@@ -24,7 +24,7 @@ Before executing the .py file, open the terminal, navigate the directory to the 
 pip install -r requirements.txt
 ```
 <br>
-It is highly recommended to create a virtual environment for the folder before installing the requirements and running the script.
+It is highly recommended that one creates a virtual environment for the folder before installing the requirements and running the script.
 
 # License
 Shield: [![CC BY-SA 4.0][cc-by-sa-shield]][cc-by-sa]
