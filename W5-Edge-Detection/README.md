@@ -31,7 +31,7 @@ deactivate
 You can then proceed to run the script in the terminal by running the following line: 
 
 ```bash
-python W5-Edge-Detexction.py --input text_image.jpeg
+python W5-Edge-Detection.py --input text_image.jpeg
 ```
 I hope everything works! 
 
