@@ -94,10 +94,13 @@ class HistComparison:
         grey_image = cv2.cvtColor(input_image, cv2.COLOR_BGR2GRAY)
         
         # Blurring image for optimised detection
-        blurred = cv2.GaussianBlur(grey_image, (5,5), 0)
+        blurred = cv2.GaussianBlur(grey_image, (7,7), 0)
+
+        # Applying thresholding (makes image black and white)
+        _, image_bw = cv2.threshold(blurred, 115, 255, cv2.THRESH_BINARY)
 
         # Applying canny edge detection
-        canny = cv2.Canny(blurred, 30, 150)
+        canny = cv2.Canny(image_bw, 30, 150)
 
         # Setting contours
         contours, _ = cv2.findContours(canny.copy(),
