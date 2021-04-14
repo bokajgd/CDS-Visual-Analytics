@@ -98,7 +98,7 @@ class CNNonPaintings:
         # Saving evaluation metrics
         class_report_path = self.model_out_dir / "classification_report.txt"
 
-        predictions = self.model.predict(self.val_images, batch_size=512)
+        predictions = self.model.predict(self.val_images, batch_size=64)
         eval_report = classification_report(self.val_labels,
                                             predictions.argmax(axis=1),
                                             target_names=self.val_class_names)
